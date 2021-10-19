@@ -1,0 +1,71 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/normalize.css">
+    <link rel="stylesheet" href="/css/HomePage.css">
+</head>
+<body>
+    @*<header class="header">
+            <section class="container">
+                <div class="header-block">
+                    <a class="logo-link">
+                        BIPR Pizza
+                    </a>
+                    <ul class="header-info">
+                        <li>Home</li>
+                        <li>Products</li>
+                        <li>Company</li>
+                        <li>More and other</li>
+                    </ul>
+                </div>
+            </section>
+        </header>*@
+    <main>
+        <section class="container">
+            <div class="homepage-main">
+                <div class="homepage-buttons">
+                    <ul class="buttons-list">
+                        <li class="menu-button"><a href="/User/Register" class="button-link">Registration</a></li>
+                        <li class="menu-button"><a href="/User/Login" class="button-link">Login</a></li>
+                        <li class="menu-button"><a class="button-link">Exit</a></li>
+                    </ul>
+                </div>
+                <div class="discount-info">
+                    <h2>Promotions and discounts!</h2>
+                    <p>
+                        Every Tuesday we have a special offer! When ordering 3 pizzas, every 4th is for free!
+                        The promotion is valid only for delivery! Other bonuses, discounts and promotions do not apply to this offer.
+                    </p>
+                    <img src="images/discount-image.png" alt="discount-image" class="discount-image" />
+                </div>
+            </div>
+        </section>
+    </main>
+    @*<footer class="footer">
+            <section class="container">
+                <div class="footer-info">
+                    <div>
+                        <p>BIPR Pizza</p>
+                        <address>
+                            <p>
+                                Royapuram
+                                Chennai, Tamil Nadu 600013
+                                India
+                            </p>
+                            <ul>
+                                <li>bipr-pizza@gmail.com</li>
+                                <li>+380 93 777 77 77</li>
+                            </ul>
+                        </address>
+                    </div>
+                </div>
+            </section>
+        </footer>*@
+</body>
+</html>

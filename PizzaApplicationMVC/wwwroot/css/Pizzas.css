@@ -1,0 +1,15 @@
+﻿.button-finish {
+    text-align: center;
+    /*display: flex;
+    justify-content: center;
+    margin-left: 250px;*/
+}
+
+.finish-link-button:hover {
+    background-color: #007bff;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

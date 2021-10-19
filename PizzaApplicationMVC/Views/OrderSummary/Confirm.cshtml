@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewData["Title"] = "Order Confirmation";
+}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/Style.css">
+    <link rel="stylesheet" href="~/css/Order.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Document</title>
+
+</head>
+
+@{ 
+    TempData["orderId"] = null;
+}
+@{ 
+    TempData.Clear();
+}
+<body>
+    <div class="confirm-main container">
+        <marquee direction="right" scrollamount="15" style="background-color:rgb(204,255,204);">
+
+            <img src="~/Images/delivery-guy_1.gif" width="150" height="200" />&emsp;
+        </marquee>
+        <div class="confirm-button">
+            <div class="inside-confirm">
+                <h3>Thank you for ordering!</h3>
+                <p>Pay by cash</p>
+                <a href='@Url.Action("Index","Home")'>
+                    <input type="button" value="Back to Home" class="btn btn-primary" />
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+

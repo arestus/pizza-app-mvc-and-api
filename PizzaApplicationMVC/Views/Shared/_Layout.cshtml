@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - BIPR Pizza</title>
+    @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" />*@
+    <link rel="stylesheet" href="~/css/normalize.css">
+
+    <link rel="stylesheet" href="/css/HomePage.css">
+</head>
+<body>
+    <header class="header">
+        <section class="container">
+            <div class="header-block">
+                @*<img src="~/Images/Logo.png" width="100" height="40" alt="Logo"/>*@
+                <a class="logo-link">
+                    BIPR Pizza
+                </a>
+                <ul class="header-info">
+                    <li><a href="/" style="text-decoration:none; color:black;">Home</a></li>
+                    <li>Products</li>
+                    <li>Company</li>
+                    <li><a href="/" style="text-decoration:none; color:black;">LogOut</a></li>
+                </ul>
+            </div>
+        </section>
+    </header>
+    <div>
+        <main role="main" class="pb-3">
+            @RenderBody()
+
+        </main>
+    </div>
+    <footer class="footer">
+        <section class="container">
+            <div class="footer-info">
+                <div>
+                    <p>BIPR Pizza</p>
+                    <address>
+                        <p>
+                            Royapuram
+                            Chennai, Tamil Nadu 600013
+                            India
+                        </p>
+                        <ul>
+                            <li>bipr-pizza@gmail.com</li>
+                            <li>+380 93 777 77 77</li>
+                        </ul>
+                    </address>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
